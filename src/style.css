@@ -1,5 +1,5 @@
-@import "/src/css/modern-reset.css";
-@import "/src/css/basic.css";
+@import '/src/css/modern-reset.css';
+@import '/src/css/basic.css';
 
 body * {
   color: #222;
@@ -75,23 +75,45 @@ body * {
     width: 100%;
     height: 100%;
 
+    li {
+      width: 100%;
+    }
     button {
+      width: 100%;
       display: grid;
+      text-align: start;
       grid-template-columns: 2rem 1fr;
 
+      padding: 0.5rem 1rem;
+      border: none;
+      background: none;
+      font: inherit;
+      cursor: pointer;
+      box-sizing: border-box;
+
       &:before {
-        content: "→";
+        content: '→';
         margin-right: 0.5rem;
       }
+
       p {
         display: flex;
         flex-direction: column;
-        text-align: start;
       }
+
+      &:focus {
+        outline: 2px solid #888;
+        outline-offset: 2px;
+      }
+
+      /* &:focus-visible {
+        outline: 2px solid #888;
+        outline-offset: 2px;
+      } */
     }
   }
 }
 
 .conversation-wrap.user-select {
-  /* display: none; */
+  display: none;
 }

@@ -1,0 +1,98 @@
+{
+  "git-graph.customEmojiShortcodeMappings": [{
+    "gitmoji.addCustomEmoji": [
+      {
+        "emoji": "🎉",
+        "code": ":init:",
+        "description": "초기 프로젝트 설정"
+      },
+      {
+        "emoji": "✨",
+        "code": ":feat:",
+        "description": "새로운 기능 추가"
+      },
+      {
+        "emoji": "🔥",
+        "code": ":remove:",
+        "description": "파일 삭제"
+      }, 
+      {
+        "emoji": "🐛",
+        "code": ":bug:",
+        "description": "버그 수정"
+      },
+      {
+        "emoji": "✏️",
+        "code": ":typo:",
+        "description": "오타 수정 (코드 또는 문서)"
+      },
+      {
+        "emoji": "📝",
+        "code": ":docs:",
+        "description": "문서 추가/수정"
+      },
+      {
+        "emoji": "💄",
+        "code": ":style:",
+        "description": "UI/Style 추가/수정"
+      },
+      {
+        "emoji": "♻️",
+        "code": ":refactor:",
+        "description": "코드 리팩토링"
+      },
+      {
+        "emoji": "🧪",
+        "code": ":test:",
+        "description": "테스트 코드 추가, 수정, 삭제"
+      },      
+      {
+        "emoji": "🍱",
+        "code": ":assets:",
+        "description": "이미지, 아이콘 등 에셋 파일 추가"
+      },      
+      {
+        "emoji": "🐳",
+        "code": ":chore:",
+        "description": "기타 설정 작업 (패키지 설정, 환경 설정 등)"
+      },
+      {
+        "emoji": "👔",
+        "code": ":logic:",
+        "description": "비즈니스 로직 수정"
+      },
+      {
+        "emoji": "💬",
+        "code": ":comment:",
+        "description": "코드에 주석 추가 또는 변경"
+      },
+      {
+        "emoji": "🚚",
+        "code": ":rename:",
+        "description": "파일명 수정/이동"
+      },
+      {
+        "emoji": "🔀",
+        "code": ":merge:",
+        "description": "브랜치 병합"
+      },
+      {
+        "emoji": "🚀",
+        "code": ":deploy:",
+        "description": "배포"
+      },
+      {
+        "emoji": "➕",
+        "code": ":adddep:",
+        "description": "의존성 추가"
+      },
+      {
+        "emoji": "➖",
+        "code": ":remdep:",
+        "description": "의존성 삭제"
+      },
+    ],
+      "gitmoji.onlyUseCustomEmoji": true
+    }
+  ]
+}

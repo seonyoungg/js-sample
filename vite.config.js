@@ -8,7 +8,7 @@ export default defineConfig({
         list: 'src/pages/todo/lists.html', // 추가 HTML 파일
         regist: 'src/pages/todo/regist.html', // 추가 HTML 파일
         info: 'src/pages/todo/info.html', // 추가 HTML 파일
-        info: 'src/pages/playlists/main.html', // 추가 HTML 파일
+        // info: 'src/pages/playlists/main.html', // 추가 HTML 파일
         // 필요한 다른 HTML 파일을 여기에 추가
       },
     },

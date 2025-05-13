@@ -1,28 +1,40 @@
-// const lines = document.querySelectorAll('.conversation-box .line');
-// const girlTalk = document.querySelector('.conversation-wrap'); // 캐릭터 대화
-// const selectBox = document.querySelector('.user-select'); // 사용자 선택지
+const lines = document.querySelectorAll('.conversation-box > .line');
+const girlTalk = document.querySelector('.conversation-wrap');
+const selectBox = document.querySelector('.user-select');
+const characterImg = document.getElementById('character-img');
 
-// let index = 0;
+const emotionImages = {
+  default: 'girl-default.png',
+  sad: 'girl-sad.png',
+  happy: 'girl-happy.png',
+  concern: 'girl-concern.png',
+  neutral: 'girl-neutral.png',
+};
 
-// // 처음엔 모든 대사 숨기기
-// lines.forEach((line) => (line.style.display = 'none'));
+let index = 0;
 
-// // 첫 줄만 보여주기
-// if (lines.length > 0) {
-//   lines[0].style.display = 'block';
-// }
+// 처음엔 모든 줄 숨기기
+lines.forEach(line => (line.style.display = 'none'));
+if (lines.length > 0) {
+  lines[0].style.display = 'block';
+  // updateImg(lines[0]);
+}
 
-// // 클릭 시 한 줄씩 교체하기
-// document.addEventListener('click', () => {
-//   if (index < lines.length - 1) {
-//     // 현재 줄 숨기고 다음 줄 보여줌
-//     lines[index].style.display = 'none';
-//     index++;
-//     lines[index].style.display = 'block';
-//   } else {
-//     // 마지막 줄 보여준 후 → 대사 숨기고 선택지 보여줌
-//     lines[index].style.display = 'none';
-//     girlTalk.style.display = 'none';
-//     selectBox.style.display = 'block';
-//   }
-// });
+document.addEventListener('click', () => {
+  if (index < lines.length - 1) {
+    lines[index].style.display = 'none';
+    index++;
+    lines[index].style.display = 'block';
+    updateImg(lines[index]);
+  } else {
+    lines[index].style.display = 'none';
+    girlTalk.style.display = 'none';
+    selectBox.style.display = 'block';
+  }
+});
+
+function updateImg(line) {
+  const emotion = line.dataset.emotion || 'default';
+  const filename = emotionImages[emotion] || emotionImages.default;
+  characterImg.src = `/src/assets/img/${filename}`;
+}
